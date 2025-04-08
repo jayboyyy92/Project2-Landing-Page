@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marco's Personal Training</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
+  <!-- HEADER -->
   <header>
     <div class="header-container">
       <div class="logo">
-        <img src="HeaderLogo.png" alt="Marco's Personal Training Logo" width="300" height="100">
+        <img src="HeaderLogo.png" alt="Marco's Personal Training Logo" />
       </div>
       <nav>
         <ul>
@@ -24,31 +24,60 @@
     </div>
   </header>
 
-  <!-- Main Section with Background Image -->
-  <main class="main-section">
-    <!-- Left: Text Overlay -->
+  <!-- HERO / MAIN SECTION -->
+  <main class="main-section" id="home">
     <div class="text-overlay">
       <h1>Transform Your Life</h1>
-      <p>Get fit, stay healthy, and achieve your goals with personalized training plans.</p>
+      <p>
+        Get fit, stay healthy, and achieve your goals with personalized training plans.
+      </p>
     </div>
-
-    <!-- Right: Form Box -->
     <div class="apply-now-box">
       <h3>Apply Now!</h3>
       <form>
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="email" name="email" placeholder="Your Email">
-        <input type="tel" name="phone" placeholder="Your Phone Number">
+        <input type="text" name="name" placeholder="Your Name" />
+        <input type="email" name="email" placeholder="Your Email" />
+        <input type="tel" name="phone" placeholder="Your Phone Number" />
         <button type="submit">Submit</button>
       </form>
     </div>
   </main>
 
-<aside>
-<h1>What we do</h1>
-<p>My training programs are carefully crafted with your personal goals in mind. Whether you choose private one-on-one sessions in a personal studio, join our highly regarded small group workouts, or take advantage of our tailored nutrition plans, every service is backed by over ten years of real-world experience. This commitment guarantees that the progress you see is not only remarkable initially but also built to last over the long haul.</p>
-</aside>
-<footer></footer>
+  <!-- INFO SECTION -->
+  <section class="info-section">
+    <div class="info-box info-box1">
+      <h2>Private Training</h2>
+      <p>
+        Experience personalized training sessions tailored to your fitness goals.
+      </p>
+      <a href="#private-training" class="learn-more">Learn More</a>
+    </div>
+    <div class="info-box info-box2">
+      <h2>Group Training</h2>
+      <p>
+        Join our small group workouts for a motivating and supportive environment.
+      </p>
+      <a href="#group-training" class="learn-more">Learn More</a>
+    </div>
+    <div class="info-box info-box3">
+      <h2>Nutrition Plans</h2>
+      <p>
+        Receive customized nutrition plans to complement your training.
+      </p>
+      <a href="#nutrition-plans" class="learn-more">Learn More</a>
+    </div>
+    <div class="info-box info-box4">
+      <h2>Online Coaching</h2>
+      <p>
+        Get expert guidance and support from anywhere with our online coaching services.
+      </p>
+      <a href="#online-coaching" class="learn-more">Learn More</a>
+    </div>
+  </section>
 
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Marco's Personal Training. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
