@@ -5,51 +5,129 @@
   box-sizing: border-box;
 }
 
-/* Body styles */
+/* BODY STYLES */
 body {
   font-family: sans-serif;
   background-color: white;
   line-height: 1.6;
 }
 
-/* Header container styles */
+/* HEADER CONTAINER */
 .header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-  margin-bottom: 10px;
+  display: flex;                   
+  justify-content: space-between;  
+  align-items: center;             
+  padding: 0px;
+  margin: 5px 0;
 }
 
-/* Unordered list styles for layout */
+.logo img {
+  /* Adjust logo image if needed */
+}
+
+/* NAV LIST */
 ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  padding: 0;
   align-items: center;
-  margin-top: 35px;
-  /* Remove pointer-events: none; if you want the links clickable */
 }
 
-/* Link styling */
+/* LINK STYLING */
 a {
-  color: #E29625;              /* Default link color */
-  text-decoration: none;    /* Remove underline */
-  font-size: 20px;          /* If you want to control font size */
+  color: #E29625;             
+  text-decoration: none;       
+  font-size: 20px;             
 }
-
-/* Visited link */
 a:visited {
   color: #555;
 }
-
-/* Hover state */
 a:hover {
   color: #C07A1E;
 }
-
-/* Active state */
 a:active {
   color: #cc3300;
+}
+
+/* MAIN SECTION WITH BACKGROUND IMAGE */
+.main-section {
+  /* Background Image Properties */
+  background-image: url('MainImageBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Layout & Spacing */
+  display: flex;                 
+  justify-content: space-between;
+  align-items: center;           /* Vertically center text/form */
+  padding: 40px;                 /* Some padding for breathing room */
+  height: 60vh;                  /* A bit taller to showcase image */
+  position: relative;            /* If you need absolute positioning inside */
+}
+
+/* LEFT SIDE: TEXT OVERLAY */
+.text-overlay {
+  /* Let it take up ~ half the space */
+  flex: 1; 
+  max-width: 50%; 
+  color: #ffffff;       /* White text for contrast on background */
+  margin-right: 20px;   /* Spacing between text and form box */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* Subtle shadow for readability */
+}
+
+.text-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.text-overlay p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* RIGHT SIDE: FORM BOX */
+.apply-now-box {
+  /* Form container styling */
+  background-color: rgba(255, 255, 255, 0.95); 
+  /* White box with slight transparency, so background image can show faintly */
+  
+  color: #333;                  /* Dark text for good contrast inside box */
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 300px;            /* Control how wide the box is */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+.apply-now-box h3 {
+  color: #E29625;  /* Brand accent color for heading inside box */
+  margin-bottom: 15px;
+}
+
+/* FORM ELEMENTS */
+.apply-now-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.apply-now-box form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* SUBMIT BUTTON */
+.apply-now-box form button {
+  padding: 10px;
+  background-color: #E29625;  /* Brand color for button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.apply-now-box form button:hover {
+  background-color: #C07A1E;
 }
