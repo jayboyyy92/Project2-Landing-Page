@@ -1,0 +1,55 @@
+/* Universal reset for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: sans-serif;
+  background-color: white;
+  line-height: 1.6;
+}
+
+/* Header container styles */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* Unordered list styles for layout */
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  align-items: center;
+  margin-top: 35px;
+  /* Remove pointer-events: none; if you want the links clickable */
+}
+
+/* Link styling */
+a {
+  color: #E29625;              /* Default link color */
+  text-decoration: none;    /* Remove underline */
+  font-size: 20px;          /* If you want to control font size */
+}
+
+/* Visited link */
+a:visited {
+  color: #555;
+}
+
+/* Hover state */
+a:hover {
+  color: #C07A1E;
+}
+
+/* Active state */
+a:active {
+  color: #cc3300;
+}
